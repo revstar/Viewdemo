@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleSelectView">
+        <!--里面圆的颜色-->
+        <attr name="inCircleColor" format="reference"/>
+        <!--外面圆的颜色-->
+        <attr name="outCircleColor" format="reference"/>
+        <!--选中圆的颜色-->
+        <attr name="selectCircleColor" format="reference"/>
+        <!--折线的颜色-->
+        <attr name="lineColor" format="reference"/>
+        <!--文字颜色-->
+        <attr name="textColor" format="reference"/>
+        <!--什么颜色-->
+        <attr name="colorString" format="string"/>
+    </declare-styleable>
+</resources>
