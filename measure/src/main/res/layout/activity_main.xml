@@ -12,7 +12,8 @@
         android:layout_height="120dp"
         android:layout_marginLeft="20dp"
         android:background="@color/white"
-        app:colorString="黑色"
+        app:colorString="红色"
+        app:inCircleColor="@color/colorAccent"
         app:selectCircleColor="@color/pastel_blue"
         app:outCircleColor="@color/pastel_blue"
          />

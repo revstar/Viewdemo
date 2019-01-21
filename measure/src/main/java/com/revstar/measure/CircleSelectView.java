@@ -36,6 +36,8 @@ public class CircleSelectView extends View {
     private Paint mPaintText=new Paint(Paint.ANTI_ALIAS_FLAG);
     //什么颜色
     private String colorString;
+    //是否选中
+    private Boolean isSelect=false;
 
     public CircleSelectView(Context context) {
         this(context,null);
@@ -96,8 +98,9 @@ public class CircleSelectView extends View {
         canvas.save();
         //选中圆的颜色
         int selectRadious=13;
-        canvas.drawCircle(0,0,selectRadious,mPaintSelectCircle);
-
+        if (isSelect){
+            canvas.drawCircle(0,0,selectRadious,mPaintSelectCircle);
+        }
         canvas.translate(-selectRadious/8,selectRadious/6);
         canvas.save();
         //折线
@@ -124,16 +127,8 @@ public class CircleSelectView extends View {
 
     }
 
-  public void isSelect(boolean isSelect,int color){
-        if (isSelect){
-            return;
-        }
-      //获取里面圆的颜色
-      inCircleColor=color;
-      mPaintInCircle.setColor(inCircleColor);
-      //选中圆的颜色
-      selectCircleColor=Color.WHITE;
-      mPaintSelectCircle.setColor(selectCircleColor);
 
-  }
+    public void isSelect(Boolean isSelect){
+        this.isSelect=isSelect;
+    }
 }

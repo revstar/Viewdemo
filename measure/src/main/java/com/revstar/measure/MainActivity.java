@@ -20,9 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         circle=findViewById(R.id.circle);
-        circle.isSelect(false,R.color.black);
-
-
+        circle.isSelect(true);
 
 
     }
